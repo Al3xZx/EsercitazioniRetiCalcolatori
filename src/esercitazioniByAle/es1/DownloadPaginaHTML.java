@@ -1,4 +1,4 @@
-package reti.esercitazioni.esercitazione1;
+package esercitazioniByAle.es1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

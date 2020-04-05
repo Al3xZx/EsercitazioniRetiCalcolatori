@@ -1,4 +1,4 @@
-package reti.esercitazioni.esercitazione1;
+package esercitazioniByAle.es1;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
