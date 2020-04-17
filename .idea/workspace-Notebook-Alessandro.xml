@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="788923da-b859-48a6-8f03-81ec401d82d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Al3xZx\OneDrive - Università della Calabria\UNICAL1920\reti di calcolatori\progettiRetiCalcolatori\EsercitazioniRetiCalcolatori" />
+        <option value="C:\Users\Al3xZx\OneDrive - Università della Calabria\UNICAL1920\reti di calcolatori\progettiRetiCalcolatori\EsercitazioniRetiCalcolatori\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZWjaKJJON6JMuIJ4wma06Midaw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="reti.esercitazioni" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Al3xZx\OneDrive - Università della Calabria\UNICAL1920\reti di calcolatori\progettiRetiCalcolatori\EsercitazioniRetiCalcolatori\src" />
+      <recent name="C:\Users\Al3xZx\OneDrive - Università della Calabria\UNICAL1920\reti di calcolatori\progettiRetiCalcolatori\EsercitazioniRetiCalcolatori" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EchoServer (2)">
+    <configuration name="EchoServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reti.src.it.unical.dimes.reti.ese1.EchoServer" />
+      <module name="EsercitazioniRetiCalcolatori" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reti.src.it.unical.dimes.reti.ese1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="esercitazioniByAle.es2.echo_client_server.EchoServer" />
+      <module name="EsercitazioniRetiCalcolatori" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esercitazioniByAle.es2.echo_client_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServerClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="esercitazioniByAle.esercitazione2.echo_client_server.Esercizio1_EchoServerClient.EchoServerClient" />
+      <module name="EsercitazioniRetiCalcolatori" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esercitazioniByAle.esercitazione2.echo_client_server.Esercizio1_EchoServerClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServerClientAd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reti.src.it.unical.dimes.reti.ese1.EchoServerClientAd" />
+      <module name="EsercitazioniRetiCalcolatori" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reti.src.it.unical.dimes.reti.ese1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SvoltoDalProfConMyReaderThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="esercitazioniByAle.es2.echo_client_server.Esercizio1_EchoServerClient.SvoltoDalProfConMyReaderThread" />
+      <module name="EsercitazioniRetiCalcolatori" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="esercitazioniByAle.es2.echo_client_server.Esercizio1_EchoServerClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EchoServer (2)" />
+        <item itemvalue="Application.SvoltoDalProfConMyReaderThread" />
+        <item itemvalue="Application.EchoServerClientAd" />
+        <item itemvalue="Application.EchoServer (1)" />
+        <item itemvalue="Application.EchoServerClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="788923da-b859-48a6-8f03-81ec401d82d3" name="Default Changelist" comment="" />
+      <created>1584961806567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584961806567</updated>
+      <workItem from="1584961810650" duration="1855000" />
+      <workItem from="1584974920636" duration="1835000" />
+      <workItem from="1584995307567" duration="750000" />
+      <workItem from="1585210447414" duration="2823000" />
+      <workItem from="1585473319170" duration="7954000" />
+      <workItem from="1585986562302" duration="104000" />
+      <workItem from="1585986743885" duration="18237000" />
+      <workItem from="1586082874034" duration="2194000" />
+    </task>
+    <task id="LOCAL-00001" summary="secondo">
+      <created>1586111714087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586111714087</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="secondo" />
+    <option name="LAST_COMMIT_MESSAGE" value="secondo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586024345702">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="294" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586024345702" />
+    <state x="186" y="101" key="CommitChangelistDialog2" timestamp="1586111712440">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="186" y="101" key="CommitChangelistDialog2/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586111712440" />
+    <state x="620" y="264" key="FileChooserDialogImpl" timestamp="1585477227979">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="620" y="264" key="FileChooserDialogImpl/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585477227979" />
+    <state x="673" y="403" key="Github.ShareDialog" timestamp="1585986839986">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="673" y="403" key="Github.ShareDialog/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585986839986" />
+    <state x="339" y="212" key="Github.UntrackedFilesDialog" timestamp="1585986872053">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="339" y="212" key="Github.UntrackedFilesDialog/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585986872053" />
+    <state width="1637" height="196" key="GridCell.Tab.0.bottom" timestamp="1586028098646">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="196" key="GridCell.Tab.0.bottom/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586028098646" />
+    <state width="1637" height="196" key="GridCell.Tab.0.center" timestamp="1586028098646">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="196" key="GridCell.Tab.0.center/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586028098646" />
+    <state width="1637" height="196" key="GridCell.Tab.0.left" timestamp="1586028098646">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="196" key="GridCell.Tab.0.left/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586028098646" />
+    <state width="1637" height="196" key="GridCell.Tab.0.right" timestamp="1586028098646">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="196" key="GridCell.Tab.0.right/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586028098646" />
+    <state width="1637" height="340" key="GridCell.Tab.1.bottom" timestamp="1585994488038">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.1.bottom/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585994488038" />
+    <state width="1637" height="340" key="GridCell.Tab.1.center" timestamp="1585994488037">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.1.center/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585994488037" />
+    <state width="1637" height="340" key="GridCell.Tab.1.left" timestamp="1585994488037">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.1.left/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585994488037" />
+    <state width="1637" height="340" key="GridCell.Tab.1.right" timestamp="1585994488037">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state width="1637" height="340" key="GridCell.Tab.1.right/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585994488037" />
+    <state x="320" y="84" key="SettingsEditor" timestamp="1585477229475">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="320" y="84" key="SettingsEditor/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1585477229475" />
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2" timestamp="1586111780524">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="432" y="243" key="Vcs.Push.Dialog.v2/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586111780524" />
+    <state x="536" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1586082933279">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="536" y="334" key="com.intellij.ide.util.TipDialog/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586082933279" />
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup" timestamp="1586001194333">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="503" y="220" width="672" height="678" key="search.everywhere.popup/1680.0.1344.816/0.0.1680.1020@0.0.1680.1020" timestamp="1586001194333" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="s" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

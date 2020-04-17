@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.ConnectException;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -26,6 +27,8 @@ public class SolProfConMyReaderThread {
                 out.println(linea);
                 linea = sc.nextLine();
             }
+        } catch (ConnectException e){
+            System.out.println("connection exception: è scaduto il time out");
         } catch (IOException e) {
             e.printStackTrace();
         }
