@@ -1,6 +1,6 @@
 package esercitazioniByAle.es2.echo_client_server;
 
-import esercitazioniByAle.es1.SocketOpener;
+import esercitazioniByAle.es1.socket.SocketOpener;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -11,10 +11,10 @@ public class HttpWelcomClient {
 
     public static void main(String[] args) {
         try {
-            Socket s = new Socket("localhost",3050);
+            Socket s = new Socket("192.168.1.117",3050);
             PrintWriter out = new PrintWriter(s.getOutputStream());//flush manuale
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            String request = "GET 127.0.0.1 HTTP/1.1";
+            String request = "GET 192.168.1.117/ HTTP/1.1";
             out.println(request);
             out.println();//secondo ritorno a capo
             out.flush();//invio tutta la richiesta
