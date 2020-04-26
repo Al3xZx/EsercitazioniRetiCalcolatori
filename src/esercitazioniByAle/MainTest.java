@@ -20,12 +20,24 @@ public class MainTest {
             Calendar c = Calendar.getInstance();
             System.out.println(c.getTime());
             System.out.println(c.getTimeInMillis());
+            c.add(Calendar.MINUTE,10);
+            System.out.println(c.getTime());
+            System.out.println(c.getTimeInMillis());
             try {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
+
+//        String s = "ciao a tutti";
+//        String[] ss = s.split(" ");
+//        System.out.println(ss.length);
+//        for (String sss : ss) {
+//            System.out.println(sss);
+//        }
+
+
 
     }
 }

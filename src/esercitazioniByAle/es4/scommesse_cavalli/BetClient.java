@@ -8,6 +8,7 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.net.Socket;
+import java.util.Random;
 
 public class BetClient {
     private int serverPort;
@@ -31,6 +32,7 @@ public class BetClient {
             PrintWriter out = new PrintWriter(s.getOutputStream(),true);
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             out.println(scommessa);
+            System.out.println("hai scommesso: " + String.format("%.2f", puntata) +"€ su "+numCavallo);
             esito = in.readLine();
             s.close();
         } catch (IOException e) {
@@ -57,9 +59,12 @@ public class BetClient {
 
     public static void main(String[] args) {
         BetClient bc = new BetClient(8001, "localhost", "230.0.0.1", 8002);
-        if (bc.effettuaScommessa(5,30.50))
+        int scegliCavallo = new Random().nextInt(11)+1;
+        double puntata = (new Random().nextDouble()) + new Random().nextInt(30)+1;
+        if (bc.effettuaScommessa(scegliCavallo,puntata)) {
+            System.out.println("scommessa accettata");
             bc.visualizzaVincitori();
-        else
+        }else
             System.out.println("scommesse chiuse!!");
     }
 }
