@@ -11,7 +11,7 @@ import java.net.Socket;
 public class EchoClient {
 
     public static void main(String[] args) throws IOException {
-        Socket s = SocketOpener.openSocket("localhost",8189,10000);
+        Socket s = SocketOpener.openSocket("192.168.1.117",8189,10000);
         PrintWriter out = new PrintWriter(s.getOutputStream(),true);
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         out.println("test 1");
