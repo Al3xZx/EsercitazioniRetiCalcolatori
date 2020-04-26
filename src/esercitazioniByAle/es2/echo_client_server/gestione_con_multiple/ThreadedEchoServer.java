@@ -12,9 +12,9 @@ public class ThreadedEchoServer {
         try {
             ServerSocket server = new ServerSocket(8189);
             while (true){
-                System.out.println("in attesa di connessione: "+server);
+                System.out.println("in attesa di connessione: "+server+ server.getInetAddress().getHostName());
                 Socket client = server.accept();
-                System.out.println("connesso: " + client);
+                System.out.println("connesso: " + client+ client.getInetAddress().getHostAddress());
                 new ThreadedEchoHandler(client).start();
             }
         } catch (IOException e) {
