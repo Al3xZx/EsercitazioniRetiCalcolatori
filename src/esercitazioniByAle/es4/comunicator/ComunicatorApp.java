@@ -4,10 +4,14 @@ import java.net.UnknownHostException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class ComunicatorApp {
 
     private int port;
+
+    private Lock lock = new ReentrantLock();
 
     private List<Comunicator> comunicators = new LinkedList<>();
     private List<Messaggio> messaggi = new LinkedList<>();
@@ -17,7 +21,7 @@ public class ComunicatorApp {
     public ComunicatorApp() {
         server = new ComunicatorServer(this);
         server.start();
-        port = server.getPort();
+        port = server.getMyPort();
         //client = new ComunicatorClient(port);
         client.start();
     }
@@ -25,6 +29,7 @@ public class ComunicatorApp {
     public List<Comunicator> getComunicators() {
         return comunicators;
     }
+
 
     public List<Messaggio> getMessaggi() {
         return messaggi;
@@ -75,7 +80,6 @@ public class ComunicatorApp {
             System.out.println("[" + i + "] " + comunicators.get(i));
         }
     }
-
 
 
 

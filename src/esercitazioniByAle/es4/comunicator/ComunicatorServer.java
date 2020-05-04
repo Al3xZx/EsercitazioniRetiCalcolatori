@@ -3,16 +3,14 @@ package esercitazioniByAle.es4.comunicator;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
-import java.net.MulticastSocket;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.io.PrintWriter;
+import java.net.*;
 import java.util.Date;
 
 public class ComunicatorServer extends Thread{
 
     private InetAddress myIp;
-    private int port;
+    private int myPort;
 
     private ServerSocket serverSocket;
 
@@ -21,7 +19,7 @@ public class ComunicatorServer extends Thread{
     public ComunicatorServer(ComunicatorApp comunicatorApp) {
         try {
             serverSocket = new ServerSocket(0);//porta scelta in automatico
-            port = serverSocket.getLocalPort();
+            myPort = serverSocket.getLocalPort();
             myIp=serverSocket.getInetAddress();
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,6 +50,7 @@ public class ComunicatorServer extends Thread{
                 Messaggio m = new Messaggio(messaggio, mittente, new Date());
                 System.out.println("nuovo messaggio arrivato>>> "+messaggio);
                 comunicatorApp.getMessaggi().add(m);
+
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,8 +59,8 @@ public class ComunicatorServer extends Thread{
 
     }
 
-    public int getPort(){
-        return port;
+    public int getMyPort(){
+        return myPort;
     }
 
 
@@ -79,16 +78,58 @@ public class ComunicatorServer extends Thread{
 
         @Override
         public void run() {
-            riceviMessaggio();
-            inviaRisposta();
+            while (true) {
+                Comunicator mittente = riceviMessaggioMulticast();
+                if (mittente != null)
+                    inviaRispostaTCP(mittente);
+                else
+                    throw new RuntimeException("utente non esistente");
+            }
         }
 
-        private void riceviMessaggio() {
-            byte[] buf = new byte[255];
-            // TODO: 03/05/20 gestire il ricevimento del messaggio 
+        /**
+         * un messaggio arriva nella seguente forma "ip_mittente porta[][][][][][][][][][][][][][][][][][]"
+         * [] equivale a carattere non specificato
+         * */
+        private Comunicator riceviMessaggioMulticast() {
+            byte[] buf = new byte[64];
+            DatagramPacket packet = new DatagramPacket(buf, buf.length);
+            try {
+                multicastSocket.receive(packet);
+                String s = new String(packet.getData());
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < s.length(); i++) {
+                    if (Character.getType(s.charAt(i)) != Character.DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE)
+                        sb.append(s.charAt(i));
+                }
+                String welcomeMessage = sb.toString();
+                String[] dati = welcomeMessage.split(" ");
+                //String ipMittente = dati[0];
+                InetAddress ipMittente = InetAddress.getByName(dati[0]);
+                int port = Integer.parseInt(dati[1]);
+                return new Comunicator(ipMittente, port);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            finally {
+                return null;
+            }
         }
 
-        private void inviaRisposta() {
+
+        private void inviaRispostaTCP(Comunicator mittente) {
+            try {
+                Socket socket = new Socket(mittente.getIp().getHostAddress(),mittente.getPorta());
+                PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
+                String s = myIp.getHostAddress()+" "+ myPort;
+                out.println(s);
+                socket.close();
+                if(!comunicatorApp.getComunicators().contains(mittente))
+                    comunicatorApp.getComunicators().add(mittente);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
 
 
