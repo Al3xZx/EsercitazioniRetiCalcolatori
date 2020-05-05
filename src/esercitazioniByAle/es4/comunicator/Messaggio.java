@@ -7,9 +7,9 @@ public class Messaggio {
     private Comunicator mittente;
     private Date dataRicezione;
 
-    public Messaggio(String messaggio, Comunicator mittente, Date dataRicezione) {
+
+    public Messaggio(String messaggio, Date dataRicezione) {
         this.messaggio = messaggio;
-        this.mittente = mittente;
         this.dataRicezione = dataRicezione;
     }
 

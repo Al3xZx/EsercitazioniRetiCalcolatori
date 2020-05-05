@@ -46,8 +46,7 @@ public class ComunicatorServer extends Thread{
                     s = in.readLine();
                 }
                 String messaggio = sb.toString();
-                Comunicator mittente = new Comunicator(socket.getInetAddress(), socket.getPort());
-                Messaggio m = new Messaggio(messaggio, mittente, new Date());
+                Messaggio m = new Messaggio(messaggio, new Date());
                 System.out.println("nuovo messaggio arrivato>>> "+messaggio);
                 comunicatorApp.getMessaggi().add(m);
 
@@ -63,6 +62,9 @@ public class ComunicatorServer extends Thread{
         return myPort;
     }
 
+    public InetAddress getMyIp() {
+        return myIp;
+    }
 
     private class GestoreMulticast extends  Thread{
         MulticastSocket multicastSocket;
@@ -110,8 +112,6 @@ public class ComunicatorServer extends Thread{
                 return new Comunicator(ipMittente, port);
             } catch (IOException e) {
                 e.printStackTrace();
-            }
-            finally {
                 return null;
             }
         }
